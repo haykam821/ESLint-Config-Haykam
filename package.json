@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config-haykam",
+  "version": "1.0.0",
+  "description": "My personal configuration for ESLint.",
+  "main": ".eslintrc.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "standard",
+    "lint",
+    "linter"
+  ],
+  "author": "haykam821",
+  "license": "MIT"
+}
