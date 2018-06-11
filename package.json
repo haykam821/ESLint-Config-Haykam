@@ -14,5 +14,13 @@
     "linter"
   ],
   "author": "haykam821",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haykam821/ESLint-Config-Haykam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haykam821/ESLint-Config-Haykam/issues"
+  },
+  "homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme"
 }
