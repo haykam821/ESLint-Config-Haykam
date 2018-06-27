@@ -9,10 +9,15 @@
   "keywords": [
     "eslint",
     "config",
+    "eslintconfig",
     "standard",
     "lint",
     "linter"
   ],
+  "peerDependencies": {
+    "eslint": ">=3",
+    "eslint-plugin-extra-rules": "0.0.0-development"
+  },
   "author": "haykam821",
   "license": "MIT",
   "repository": {
