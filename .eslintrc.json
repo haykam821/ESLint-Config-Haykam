@@ -30,6 +30,7 @@
             "error",
             "property"
         ],
+        "dot-notation": "error",
         "extra-rules/no-commented-out-code": "error",
         "extra-rules/no-for-loops": "error",
         "extra-rules/no-single-line-objects": "error",
@@ -55,6 +56,8 @@
         ],
         "no-console": "error",
         "no-empty-function": "error",
+        "no-eval": "error",
+        "no-extend-native": "error",
         "no-floating-decimal": "error",
         "no-inline-comments": "error",
         "no-lonely-if": "error",
@@ -107,6 +110,10 @@
         "space-infix-ops": "error",
         "space-unary-ops": "error",
         "spaced-comment": "error",
+        "wrap-iife": [
+            "error",
+            "outside"
+        ],
         "yoda": "error"
     }
 }
