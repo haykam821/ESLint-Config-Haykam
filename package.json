@@ -1,31 +1,31 @@
 {
-  "name": "eslint-config-haykam",
-  "version": "1.0.1",
-  "description": "My personal configuration for ESLint.",
-  "main": ".eslintrc.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "eslint",
-    "config",
-    "eslintconfig",
-    "standard",
-    "lint",
-    "linter"
-  ],
-  "peerDependencies": {
-    "eslint": ">=3",
-    "eslint-plugin-extra-rules": "0.0.0-development"
-  },
-  "author": "haykam821",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haykam821/ESLint-Config-Haykam.git"
-  },
-  "bugs": {
-    "url": "https://github.com/haykam821/ESLint-Config-Haykam/issues"
-  },
-  "homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme"
+	"name": "eslint-config-haykam",
+	"version": "1.0.1",
+	"description": "My personal configuration for ESLint.",
+	"main": ".eslintrc.json",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"eslint",
+		"config",
+		"eslintconfig",
+		"standard",
+		"lint",
+		"linter"
+	],
+	"peerDependencies": {
+		"eslint": ">=3",
+		"eslint-plugin-extra-rules": "0.0.0-development"
+	},
+	"author": "haykam821",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haykam821/ESLint-Config-Haykam.git"
+	},
+	"bugs": {
+		"url": "https://github.com/haykam821/ESLint-Config-Haykam/issues"
+	},
+	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme"
 }
