@@ -4,15 +4,17 @@
         "node": true
     },
     "extends": [
-		"eslint:recommended",
-		"plugin:unicorn/recommended"
-	],
+        "eslint:recommended",
+        "plugin:unicorn/recommended"
+    ],
     "parserOptions": {
         "ecmaVersion": 2017
     },
     "plugins": [
-		"extra-rules",
-		"unicorn"
+        "extra-rules",
+        "unicorn",
+        "json",
+        "html"
     ],
     "rules": {
         "brace-style": [
