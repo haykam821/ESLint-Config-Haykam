@@ -16,7 +16,8 @@
 	],
 	"peerDependencies": {
 		"eslint": ">=3",
-		"eslint-plugin-extra-rules": "0.0.0-development"
+		"eslint-plugin-extra-rules": "0.0.0-development",
+		"eslint-plugin-unicorn": "^4.0.3"
 	},
 	"author": "haykam821",
 	"license": "MIT",

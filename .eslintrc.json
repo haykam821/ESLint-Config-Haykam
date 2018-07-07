@@ -3,12 +3,16 @@
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+		"eslint:recommended",
+		"plugin:unicorn/recommended"
+	],
     "parserOptions": {
         "ecmaVersion": 2017
     },
     "plugins": [
-        "extra-rules"
+		"extra-rules",
+		"unicorn"
     ],
     "rules": {
         "brace-style": [
