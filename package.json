@@ -15,9 +15,7 @@
 		"linter"
 	],
 	"peerDependencies": {
-		"eslint": ">=4"
-	},
-	"dependencies": {
+		"eslint": ">=4",
 		"eslint-plugin-extra-rules": "0.0.0-development",
 		"eslint-plugin-html": "^4.0.5",
 		"eslint-plugin-json": "^1.2.0",
