@@ -14,7 +14,8 @@
         "extra-rules",
         "unicorn",
         "json",
-        "html"
+        "html",
+        "markdown"
     ],
     "rules": {
         "brace-style": [
