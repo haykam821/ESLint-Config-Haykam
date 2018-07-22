@@ -85,6 +85,9 @@
                 "maxEOF": 1
             }
         ],
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
         "no-shadow": [
             "error",
             {
