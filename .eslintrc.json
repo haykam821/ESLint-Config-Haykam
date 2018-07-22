@@ -132,9 +132,7 @@
         "space-infix-ops": "error",
         "space-unary-ops": "error",
         "spaced-comment": "error",
-        "valid-jsdoc": [
-            "error"
-        ],
+        "valid-jsdoc": "error",
         "wrap-iife": [
             "error",
             "outside"
