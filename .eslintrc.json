@@ -35,6 +35,7 @@
             "error",
             "always-multiline"
         ],
+        "sort-keys": "error",
         "comma-spacing": "error",
         "comma-style": "error",
         "curly": [
