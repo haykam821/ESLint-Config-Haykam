@@ -30,6 +30,7 @@
             }
         ],
         "camelcase": "error",
+        "capitalized-comments": "error",
         "comma-dangle": [
             "error",
             "always-multiline"
