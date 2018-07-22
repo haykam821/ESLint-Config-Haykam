@@ -87,6 +87,7 @@
                 "maxEOF": 1
             }
         ],
+        "no-nested-ternary": "error",
         "no-new": "error",
         "no-new-func": "error",
         "no-new-wrappers": "error",
@@ -104,6 +105,7 @@
         "no-trailing-spaces": [
             "error"
         ],
+        "no-unneeded-ternary": "error",
         "no-var": "error",
         "object-curly-spacing": [
             "error",
