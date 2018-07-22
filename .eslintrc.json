@@ -18,6 +18,10 @@
         "markdown"
     ],
     "rules": {
+        "array-bracket-newline": [
+            "error",
+            "consistent"
+        ],
         "arrow-parens": [
             "error",
             "as-needed"
