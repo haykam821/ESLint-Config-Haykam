@@ -35,7 +35,6 @@
             "error",
             "always-multiline"
         ],
-        "sort-keys": "error",
         "comma-spacing": "error",
         "comma-style": "error",
         "curly": [
@@ -111,6 +110,10 @@
             "always"
         ],
         "prefer-const": "error",
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
         "quotes": [
             "error",
             "double"
@@ -119,6 +122,7 @@
             "error",
             "always"
         ],
+        "sort-keys": "error",
         "space-before-blocks": "error",
         "space-before-function-paren": [
             "error",
