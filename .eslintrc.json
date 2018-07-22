@@ -29,6 +29,7 @@
                 "allowSingleLine": true
             }
         ],
+        "camelcase": "error",
         "comma-dangle": [
             "error",
             "always-multiline"
