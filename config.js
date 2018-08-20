@@ -137,6 +137,29 @@ module.exports = {
 		"space-infix-ops": "error",
 		"space-unary-ops": "error",
 		"spaced-comment": "error",
+		"unicorn/catch-error-name": [
+			"error",
+			{
+				name: "error"
+			}
+		],
+		"unicorn/filename-case": [
+			"error",
+			{
+				case: "kebabCase"
+			}
+		],
+		"unicorn/no-abusive-eslint-disable": "error",
+		"unicorn/throw-new-error": "error",
+		"unicorn/no-array-instanceof": "error",
+		"unicorn/prefer-starts-ends-with": "error",
+		"unicorn/prefer-type-error": "error",
+		"unicorn/import-index": "error",
+		"unicorn/new-for-builtins": "error",
+		"unicorn/regex-shorthand": "error",
+		"unicorn/prefer-spread": "error",
+		"unicorn/error-message": "error",
+		"unicorn/prefer-add-event-listener": "error",
 		"valid-jsdoc": "error",
 		"wrap-iife": [
 			"error",
