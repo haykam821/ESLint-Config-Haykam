@@ -3,19 +3,16 @@ module.exports = {
 		es6: true,
 		node: true
 	},
-	extends: [
-		"eslint:recommended",
-		"plugin:unicorn/recommended"
-	],
+	extends: "eslint:recommended",
 	parserOptions: {
 		ecmaVersion: 2017
 	},
 	plugins: [
-		"extra-rules",
-		"unicorn",
-		"json",
-		"html",
-		"markdown"
+		require.resolve("eslint-plugin-extra-rules"),
+		require.resolve("eslint-plugin-unicorn"),
+		require.resolve("eslint-plugin-json"),
+		require.resolve("eslint-plugin-html"),
+		require.resolve("eslint-plugin-markdown"),
 	],
 	rules: {
 		"array-bracket-newline": [
