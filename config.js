@@ -96,6 +96,7 @@ module.exports = {
 		"no-new-func": "error",
 		"no-new-wrappers": "error",
 		"no-path-concat": "error",
+		"no-return-await": "error",
 		"no-shadow": [
 			"error",
 			{
@@ -122,6 +123,7 @@ module.exports = {
 			"error",
 			"double"
 		],
+		"require-await": "error",
 		semi: [
 			"error",
 			"always"
