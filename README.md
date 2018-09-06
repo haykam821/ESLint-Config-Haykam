@@ -20,3 +20,10 @@ Add this to your `.eslintrc.json` file:
   "extends": "eslint-config-haykam"
 }
 ```
+
+## Projects Used In
+
+Here are some of the projects that I use this config in:
+
+* [Snooful](https://github.com/Snooful/Snooful) ([commit](https://github.com/Snooful/Snooful/commit/02c7740821f42839f1247315e151e9233fd6c3f6))
+* [Discord Dumper](https://github.com/haykam821/Discord-Dumper) ([commit](https://github.com/haykam821/Discord-Dumper/commit/21d5da6ffd308c904d3807377abaaa7cd7c54586))
