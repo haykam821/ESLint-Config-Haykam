@@ -1,6 +1,6 @@
 # ESLint-Config-Haykam
 
-My personal configuration for ESLint.
+This configuration for ESLint is based off the style that I program in. It is used in as many of my projects as possible, and I do accept issues and pull requests to projects of mine that do not use this config yet.
 
 ## Installation
 
