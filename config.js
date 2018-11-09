@@ -124,6 +124,7 @@ module.exports = {
 			"double"
 		],
 		"require-await": "error",
+		"require-jsdoc": "error",
 		semi: [
 			"error",
 			"always"
