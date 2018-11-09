@@ -165,7 +165,23 @@ module.exports = {
 		"unicorn/prefer-spread": "error",
 		"unicorn/error-message": "error",
 		"unicorn/prefer-add-event-listener": "error",
-		"valid-jsdoc": "error",
+		"valid-jsdoc": [
+			"error",
+			{
+				prefer: {
+					return: "returns",
+					arg: "param",
+					argument: "param",
+				},
+				preferType: {
+					"object": "Object",
+				},
+				requireReturn: false,
+				requireReturnType: false,
+				requireParamDescription: true,
+				requireReturnDescription: false,
+			},
+		],
 		"wrap-iife": [
 			"error",
 			"outside"
