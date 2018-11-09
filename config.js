@@ -125,6 +125,7 @@ module.exports = {
 			"always"
 		],
 		"prefer-const": "error",
+		"prefer-object-spread": "error",
 		"quote-props": [
 			"error",
 			"as-needed"
