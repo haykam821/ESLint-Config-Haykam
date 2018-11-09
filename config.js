@@ -54,7 +54,10 @@ module.exports = {
 		"extra-rules/no-commented-out-code": "error",
 		"extra-rules/no-for-loops": "error",
 		"extra-rules/no-single-line-objects": "error",
-		"handle-callback-err": "off",
+		"handle-callback-err": [
+			"error",
+			"error",
+		],
 		indent: [
 			"error",
 			"tab",
