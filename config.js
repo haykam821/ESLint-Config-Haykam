@@ -99,6 +99,13 @@ module.exports = {
 		"no-new-func": "error",
 		"no-new-wrappers": "error",
 		"no-path-concat": "error",
+		"no-restricted-modules": [
+			"error",
+			[{
+				"name": "fs",
+				"message": "Use fs-extra for promises, which results in readable code."
+			}],
+		],
 		"no-return-await": "error",
 		"no-shadow": [
 			"error",
