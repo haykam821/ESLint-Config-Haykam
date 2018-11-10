@@ -8,7 +8,7 @@ module.exports = {
 		"plugin:unicorn/recommended"
 	],
 	parserOptions: {
-		ecmaVersion: 2017
+		ecmaVersion: 2018
 	},
 	plugins: [
 		"extra-rules",
