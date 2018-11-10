@@ -101,10 +101,12 @@ module.exports = {
 		"no-path-concat": "error",
 		"no-restricted-modules": [
 			"error",
-			[{
-				"name": "fs",
-				"message": "Use fs-extra for promises, which results in readable code."
-			}],
+			{
+				paths: [{
+					name: "fs",
+					message: "Use fs-extra for promises, which results in readable code."
+				}],
+			},
 		],
 		"no-return-await": "error",
 		"no-shadow": [
