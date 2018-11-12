@@ -8,7 +8,7 @@ module.exports = {
 		"plugin:unicorn/recommended"
 	],
 	parserOptions: {
-		ecmaVersion: 2017
+		ecmaVersion: 2018
 	},
 	plugins: [
 		"extra-rules",
@@ -54,7 +54,10 @@ module.exports = {
 		"extra-rules/no-commented-out-code": "error",
 		"extra-rules/no-for-loops": "error",
 		"extra-rules/no-single-line-objects": "error",
-		"handle-callback-err": "off",
+		"handle-callback-err": [
+			"error",
+			"error",
+		],
 		indent: [
 			"error",
 			"tab",
@@ -96,6 +99,16 @@ module.exports = {
 		"no-new-func": "error",
 		"no-new-wrappers": "error",
 		"no-path-concat": "error",
+		"no-restricted-modules": [
+			"error",
+			{
+				paths: [{
+					name: "fs",
+					message: "Use fs-extra for promises, which results in readable code."
+				}],
+			},
+		],
+		"no-return-await": "error",
 		"no-shadow": [
 			"error",
 			{
@@ -114,6 +127,7 @@ module.exports = {
 			"always"
 		],
 		"prefer-const": "error",
+		"prefer-object-spread": "error",
 		"quote-props": [
 			"error",
 			"as-needed"
@@ -122,6 +136,8 @@ module.exports = {
 			"error",
 			"double"
 		],
+		"require-await": "error",
+		"require-jsdoc": "error",
 		semi: [
 			"error",
 			"always"
@@ -163,7 +179,23 @@ module.exports = {
 		"unicorn/prefer-spread": "error",
 		"unicorn/error-message": "error",
 		"unicorn/prefer-add-event-listener": "error",
-		"valid-jsdoc": "error",
+		"valid-jsdoc": [
+			"error",
+			{
+				prefer: {
+					return: "returns",
+					arg: "param",
+					argument: "param",
+				},
+				preferType: {
+					"object": "Object",
+				},
+				requireReturn: false,
+				requireReturnType: false,
+				requireParamDescription: true,
+				requireReturnDescription: false,
+			},
+		],
 		"wrap-iife": [
 			"error",
 			"outside"
