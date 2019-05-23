@@ -1,54 +1,54 @@
 module.exports = {
 	env: {
 		es6: true,
-		node: true
+		node: true,
 	},
 	extends: [
 		"eslint:recommended",
-		"plugin:unicorn/recommended"
+		"plugin:unicorn/recommended",
 	],
 	parserOptions: {
-		ecmaVersion: 2018
+		ecmaVersion: 2018,
 	},
 	plugins: [
 		"extra-rules",
 		"unicorn",
 		"json",
 		"html",
-		"markdown"
+		"markdown",
 	],
 	rules: {
 		"array-bracket-newline": [
 			"error",
-			"consistent"
+			"consistent",
 		],
 		"arrow-parens": [
 			"error",
-			"as-needed"
+			"as-needed",
 		],
 		"brace-style": [
 			"error",
 			"1tbs",
 			{
-				allowSingleLine: true
-			}
+				allowSingleLine: true,
+			},
 		],
 		camelcase: "error",
 		"capitalized-comments": "error",
 		"comma-dangle": [
 			"error",
-			"always-multiline"
+			"always-multiline",
 		],
 		"comma-spacing": "error",
 		"comma-style": "error",
 		curly: [
 			"error",
 			"multi-line",
-			"consistent"
+			"consistent",
 		],
 		"dot-location": [
 			"error",
-			"property"
+			"property",
 		],
 		"dot-notation": "error",
 		"extra-rules/no-commented-out-code": "error",
@@ -62,20 +62,20 @@ module.exports = {
 			"error",
 			"tab",
 			{
-				SwitchCase: 1
-			}
+				SwitchCase: 1,
+			},
 		],
 		"max-nested-callbacks": [
 			"error",
 			{
-				max: 4
-			}
+				max: 4,
+			},
 		],
 		"max-statements-per-line": [
 			"error",
 			{
-				max: 2
-			}
+				max: 2,
+			},
 		],
 		"no-console": "error",
 		"no-empty-function": "error",
@@ -91,8 +91,8 @@ module.exports = {
 			{
 				max: 2,
 				maxBOF: 0,
-				maxEOF: 1
-			}
+				maxEOF: 1,
+			},
 		],
 		"no-nested-ternary": "error",
 		"no-new": "error",
@@ -103,8 +103,8 @@ module.exports = {
 			"error",
 			{
 				paths: [{
+					message: "Use fs-extra for promises, which results in readable code.",
 					name: "fs",
-					message: "Use fs-extra for promises, which results in readable code."
 				}],
 			},
 		],
@@ -115,32 +115,32 @@ module.exports = {
 				allow: [
 					"err",
 					"resolve",
-					"reject"
-				]
-			}
+					"reject",
+				],
+			},
 		],
 		"no-trailing-spaces": "error",
 		"no-unneeded-ternary": "error",
 		"no-var": "error",
 		"object-curly-spacing": [
 			"error",
-			"always"
+			"always",
 		],
 		"prefer-const": "error",
 		"prefer-object-spread": "error",
 		"quote-props": [
 			"error",
-			"as-needed"
+			"as-needed",
 		],
 		quotes: [
 			"error",
-			"double"
+			"double",
 		],
 		"require-await": "error",
 		"require-jsdoc": "error",
 		semi: [
 			"error",
-			"always"
+			"always",
 		],
 		"sort-keys": "error",
 		"space-before-blocks": "error",
@@ -149,8 +149,8 @@ module.exports = {
 			{
 				anonymous: "never",
 				asyncArrow: "always",
-				named: "never"
-			}
+				named: "never",
+			},
 		],
 		"space-in-parens": "error",
 		"space-infix-ops": "error",
@@ -159,47 +159,47 @@ module.exports = {
 		"unicorn/catch-error-name": [
 			"error",
 			{
-				name: "error"
-			}
+				name: "error",
+			},
 		],
+		"unicorn/error-message": "error",
 		"unicorn/filename-case": [
 			"error",
 			{
-				case: "kebabCase"
-			}
+				case: "kebabCase",
+			},
 		],
-		"unicorn/no-abusive-eslint-disable": "error",
-		"unicorn/throw-new-error": "error",
-		"unicorn/no-array-instanceof": "error",
-		"unicorn/prefer-starts-ends-with": "error",
-		"unicorn/prefer-type-error": "error",
 		"unicorn/import-index": "error",
 		"unicorn/new-for-builtins": "error",
-		"unicorn/regex-shorthand": "error",
-		"unicorn/prefer-spread": "error",
-		"unicorn/error-message": "error",
+		"unicorn/no-abusive-eslint-disable": "error",
+		"unicorn/no-array-instanceof": "error",
 		"unicorn/prefer-add-event-listener": "error",
+		"unicorn/prefer-spread": "error",
+		"unicorn/prefer-starts-ends-with": "error",
+		"unicorn/prefer-type-error": "error",
+		"unicorn/regex-shorthand": "error",
+		"unicorn/throw-new-error": "error",
 		"valid-jsdoc": [
 			"error",
 			{
 				prefer: {
-					return: "returns",
 					arg: "param",
 					argument: "param",
+					return: "returns",
 				},
 				preferType: {
-					"object": "Object",
+					object: "Object",
 				},
-				requireReturn: false,
-				requireReturnType: false,
 				requireParamDescription: true,
+				requireReturn: false,
 				requireReturnDescription: false,
+				requireReturnType: false,
 			},
 		],
 		"wrap-iife": [
 			"error",
-			"outside"
+			"outside",
 		],
-		yoda: "error"
-	}
+		yoda: "error",
+	},
 };
