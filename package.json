@@ -2,7 +2,7 @@
 	"name": "eslint-config-haykam",
 	"version": "1.5.1",
 	"description": "My personal configuration for ESLint.",
-	"main": "config.js",
+	"main": "./eslint-config.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint \"./**/*.js\""
