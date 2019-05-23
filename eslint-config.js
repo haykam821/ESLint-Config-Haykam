@@ -5,7 +5,6 @@ module.exports = {
 	},
 	extends: [
 		"eslint:recommended",
-		"plugin:unicorn/recommended",
 	],
 	parserOptions: {
 		ecmaVersion: 2018,
@@ -163,6 +162,8 @@ module.exports = {
 			},
 		],
 		"unicorn/error-message": "error",
+		"unicorn/escape-case": "error",
+		"unicorn/explicit-length-check": "error",
 		"unicorn/filename-case": [
 			"error",
 			{
@@ -173,7 +174,12 @@ module.exports = {
 		"unicorn/new-for-builtins": "error",
 		"unicorn/no-abusive-eslint-disable": "error",
 		"unicorn/no-array-instanceof": "error",
+		"unicorn/no-hex-escape": "error",
+		"unicorn/no-new-buffer": "error",
+		"unicorn/no-process-exit": "error",
+		"unicorn/number-literal-case": "error",
 		"unicorn/prefer-add-event-listener": "error",
+		"unicorn/prefer-exponentiation-operator": "error",
 		"unicorn/prefer-spread": "error",
 		"unicorn/prefer-starts-ends-with": "error",
 		"unicorn/prefer-type-error": "error",
