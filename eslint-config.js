@@ -78,6 +78,7 @@ module.exports = {
 		],
 		"no-console": "error",
 		"no-empty-function": "error",
+		"no-empty-pattern": "error",
 		"no-eval": "error",
 		"no-extend-native": "error",
 		"no-floating-decimal": "error",
@@ -120,6 +121,7 @@ module.exports = {
 		],
 		"no-trailing-spaces": "error",
 		"no-unneeded-ternary": "error",
+		"no-useless-rename": "error",
 		"no-var": "error",
 		"object-curly-spacing": [
 			"error",
