@@ -1,3 +1,6 @@
 {
-	"extends": "./eslint-config.js"
+	"extends": "./eslint-config.js",
+	"rules": {
+		"unicorn/prevent-abbreviations": "off"
+	}
 }
