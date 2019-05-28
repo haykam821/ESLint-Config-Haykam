@@ -32,5 +32,8 @@
 	"bugs": {
 		"url": "https://github.com/haykam821/ESLint-Config-Haykam/issues"
 	},
-	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme"
+	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme",
+	"files": [
+		"./eslint-config.js"
+	]
 }
