@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-haykam",
-	"version": "1.6.0",
+	"version": "1.7.0",
 	"description": "My personal configuration for ESLint.",
 	"main": "./eslint-config.js",
 	"scripts": {
