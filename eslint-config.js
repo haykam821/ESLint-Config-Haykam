@@ -185,6 +185,7 @@ module.exports = {
 		"unicorn/prefer-spread": "error",
 		"unicorn/prefer-starts-ends-with": "error",
 		"unicorn/prefer-type-error": "error",
+		"unicorn/prevent-abbreviations": "off",
 		"unicorn/regex-shorthand": "error",
 		"unicorn/throw-new-error": "error",
 		"valid-jsdoc": [
