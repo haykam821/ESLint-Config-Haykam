@@ -21,6 +21,10 @@ module.exports = {
 			"error",
 			"consistent",
 		],
+		"array-element-newline": [
+			"error",
+			"consistent",
+		],
 		"arrow-parens": [
 			"error",
 			"as-needed",
@@ -127,8 +131,10 @@ module.exports = {
 			"error",
 			"always",
 		],
+		"one-var": ["error", "never"],
 		"prefer-const": "error",
 		"prefer-object-spread": "error",
+		"prefer-rest-params": "error",
 		"quote-props": [
 			"error",
 			"as-needed",
@@ -157,6 +163,7 @@ module.exports = {
 		"space-infix-ops": "error",
 		"space-unary-ops": "error",
 		"spaced-comment": "error",
+		"symbol-description": "error",
 		"template-curly-spacing": ["error", "never"],
 		"unicorn/catch-error-name": [
 			"error",
