@@ -55,7 +55,6 @@ module.exports = {
 		],
 		"dot-notation": "error",
 		"extra-rules/no-commented-out-code": "error",
-		"extra-rules/no-for-loops": "error",
 		"extra-rules/no-single-line-objects": "error",
 		"handle-callback-err": [
 			"error",
@@ -184,6 +183,7 @@ module.exports = {
 		"unicorn/new-for-builtins": "error",
 		"unicorn/no-abusive-eslint-disable": "error",
 		"unicorn/no-array-instanceof": "error",
+		"unicorn/no-for-loop": "error",
 		"unicorn/no-hex-escape": "error",
 		"unicorn/no-new-buffer": "error",
 		"unicorn/no-process-exit": "error",
