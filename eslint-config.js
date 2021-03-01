@@ -14,6 +14,7 @@ module.exports = {
 		"extra-rules",
 		"unicorn",
 		"jsdoc",
+		"node",
 		"json",
 		"html",
 		"markdown",
@@ -58,10 +59,6 @@ module.exports = {
 		"dot-notation": "error",
 		"extra-rules/no-commented-out-code": "error",
 		"extra-rules/no-single-line-objects": "error",
-		"handle-callback-err": [
-			"error",
-			"error",
-		],
 		indent: [
 			"error",
 			"tab",
@@ -118,16 +115,6 @@ module.exports = {
 		"no-new": "error",
 		"no-new-func": "error",
 		"no-new-wrappers": "error",
-		"no-path-concat": "error",
-		"no-restricted-modules": [
-			"error",
-			{
-				paths: [{
-					message: "Use fs-extra for promises, which results in readable code.",
-					name: "fs",
-				}],
-			},
-		],
 		"no-return-await": "error",
 		"no-shadow": [
 			"error",
@@ -143,6 +130,18 @@ module.exports = {
 		"no-unneeded-ternary": "error",
 		"no-useless-rename": "error",
 		"no-var": "error",
+		"node/handle-callback-err": [
+			"error",
+			"error",
+		],
+		"node/no-path-concat": "error",
+		"node/no-restricted-require": [
+			"error",
+			[{
+				message: "Use fs-extra for promises, which results in readable code.",
+				name: "fs",
+			}],
+		],
 		"object-curly-spacing": [
 			"error",
 			"always",
