@@ -13,6 +13,7 @@ module.exports = {
 	plugins: [
 		"extra-rules",
 		"unicorn",
+		"jsdoc",
 		"json",
 		"html",
 		"markdown",
@@ -68,6 +69,21 @@ module.exports = {
 				SwitchCase: 1,
 			},
 		],
+		"jsdoc/check-param-names": "error",
+		"jsdoc/check-tag-names": "error",
+		"jsdoc/check-types": [
+			"error",
+			{
+				noDefaults: true,
+			},
+		],
+		"jsdoc/require-jsdoc": "error",
+		"jsdoc/require-param": "error",
+		"jsdoc/require-param-description": "error",
+		"jsdoc/require-param-name": "error",
+		"jsdoc/require-param-type": "error",
+		"jsdoc/require-returns-check": "error",
+		"jsdoc/valid-types": "error",
 		"max-nested-callbacks": [
 			"error",
 			{
@@ -145,7 +161,6 @@ module.exports = {
 			"double",
 		],
 		"require-await": "error",
-		"require-jsdoc": "error",
 		semi: [
 			"error",
 			"always",
@@ -205,27 +220,22 @@ module.exports = {
 		"unicorn/prefer-type-error": "error",
 		"unicorn/prevent-abbreviations": "off",
 		"unicorn/throw-new-error": "error",
-		"valid-jsdoc": [
-			"error",
-			{
-				prefer: {
-					arg: "param",
-					argument: "param",
-					return: "returns",
-				},
-				preferType: {
-					object: "Object",
-				},
-				requireParamDescription: true,
-				requireReturn: false,
-				requireReturnDescription: false,
-				requireReturnType: false,
-			},
-		],
 		"wrap-iife": [
 			"error",
 			"outside",
 		],
 		yoda: "error",
+	},
+	settings: {
+		jsdoc: {
+			preferredTypes: {
+				object: "Object",
+			},
+			tagNamePreference: {
+				arg: "param",
+				argument: "param",
+				return: "returns",
+			},
+		},
 	},
 };
