@@ -1,5 +1,6 @@
 module.exports = {
 	env: {
+		es2021: true,
 		es6: true,
 		node: true,
 	},
@@ -7,7 +8,7 @@ module.exports = {
 		"eslint:recommended",
 	],
 	parserOptions: {
-		ecmaVersion: 2018,
+		ecmaVersion: 2021,
 	},
 	plugins: [
 		"extra-rules",
