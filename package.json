@@ -37,5 +37,8 @@
 	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme",
 	"files": [
 		"eslint-config.js"
-	]
+	],
+	"eslintConfig": {
+		"extends": "./eslint-config.js"
+	}
 }
