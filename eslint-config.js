@@ -227,6 +227,7 @@ module.exports = {
 	},
 	settings: {
 		jsdoc: {
+			mode: "typescript",
 			preferredTypes: {
 				object: "Object",
 			},
