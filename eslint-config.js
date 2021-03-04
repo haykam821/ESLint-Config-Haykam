@@ -57,6 +57,7 @@ module.exports = {
 			"property",
 		],
 		"dot-notation": "error",
+		"eol-last": "error",
 		"extra-rules/no-commented-out-code": "error",
 		"extra-rules/no-single-line-objects": "error",
 		indent: [
