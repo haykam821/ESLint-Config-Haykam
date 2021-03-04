@@ -7,6 +7,26 @@ module.exports = {
 	extends: [
 		"eslint:recommended",
 	],
+	overrides: [
+		{
+			files: [
+				"*.md",
+			],
+			processor: "markdown/markdown",
+		},
+		{
+			files: [
+				"**/*.md/**",
+			],
+			rules: {
+				"eol-last": "off",
+				"no-multiple-empty-lines": "off",
+				"no-undef": "off",
+				"no-unused-vars": "off",
+				"unicorn/filename-case": "off",
+			},
+		},
+	],
 	parserOptions: {
 		ecmaVersion: 2021,
 	},
