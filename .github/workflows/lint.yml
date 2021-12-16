@@ -1,0 +1,18 @@
+name: Lint
+on:
+  - push
+  - pull_request
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Install
+        run: npm install
+      - name: Install npm-install-peers
+        run: npm install npm-install-peers
+      - name: Install Peers
+        run: npm-install-peers
+      - name: Lint
+        run: npm run lint
