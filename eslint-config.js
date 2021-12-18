@@ -79,7 +79,6 @@ module.exports = {
 		"dot-notation": "error",
 		"eol-last": "error",
 		"extra-rules/no-commented-out-code": "error",
-		"extra-rules/no-single-line-objects": "error",
 		"for-direction": "error",
 		"getter-return": "error",
 		indent: [
@@ -215,6 +214,11 @@ module.exports = {
 				name: "fs",
 			}],
 		],
+		"object-curly-newline": ["error", {
+			ObjectExpression: {
+				minProperties: 1,
+			},
+		}],
 		"object-curly-spacing": [
 			"error",
 			"always",
