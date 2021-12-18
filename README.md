@@ -10,9 +10,9 @@ This configuration for ESLint is based off the style that I program in. It is us
 
 ## Installation
 
-Use `npm` to install this shareable config and its peer dependencies:
+Use `npm` to install this shareable config and ESLint itself:
 
-    npm install --save-dev eslint-config-haykam eslint eslint-plugin-extra-rules eslint-plugin-html eslint-plugin-json eslint-plugin-markdown eslint-plugin-unicorn
+    npm install --save-dev eslint-config-haykam eslint
 
 ## Usage
 
