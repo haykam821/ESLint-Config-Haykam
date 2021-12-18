@@ -103,6 +103,7 @@ module.exports = {
 		"jsdoc/require-param-type": "error",
 		"jsdoc/require-returns-check": "error",
 		"jsdoc/valid-types": "error",
+		"key-spacing": "error",
 		"max-nested-callbacks": [
 			"error",
 			{
