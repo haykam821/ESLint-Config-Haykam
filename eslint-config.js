@@ -219,6 +219,7 @@ module.exports = {
 			"error",
 			"always",
 		],
+		"object-property-newline": "error",
 		"one-var": ["error", "never"],
 		"prefer-const": "error",
 		"prefer-exponentiation-operator": "error",
