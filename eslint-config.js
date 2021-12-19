@@ -104,6 +104,7 @@ module.exports = {
 		"jsdoc/require-returns-check": "error",
 		"jsdoc/valid-types": "error",
 		"key-spacing": "error",
+		"keyword-spacing": "error",
 		"max-nested-callbacks": [
 			"error",
 			{
