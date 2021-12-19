@@ -171,6 +171,7 @@ module.exports = {
 		"no-new-wrappers": "error",
 		"no-obj-calls": "error",
 		"no-octal": "error",
+		"no-plusplus": "error",
 		"no-prototype-builtins": "error",
 		"no-redeclare": "error",
 		"no-regex-spaces": "error",
