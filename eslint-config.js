@@ -154,6 +154,7 @@ module.exports = {
 		"no-lonely-if": "error",
 		"no-misleading-character-class": "error",
 		"no-mixed-spaces-and-tabs": "error",
+		"no-multi-assign": "error",
 		"no-multi-spaces": "error",
 		"no-multiple-empty-lines": [
 			"error",
