@@ -97,7 +97,9 @@ module.exports = {
 				noDefaults: true,
 			},
 		],
-		"jsdoc/require-jsdoc": "error",
+		"jsdoc/require-jsdoc": ["error", {
+			enableFixer: false,
+		}],
 		"jsdoc/require-param": "error",
 		"jsdoc/require-param-description": "error",
 		"jsdoc/require-param-name": "error",
