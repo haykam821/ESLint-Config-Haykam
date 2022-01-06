@@ -97,6 +97,7 @@ module.exports = {
 				noDefaults: true,
 			},
 		],
+		"jsdoc/require-hyphen-before-param-description": ["error", "never"],
 		"jsdoc/require-jsdoc": ["error", {
 			enableFixer: false,
 			require: {
