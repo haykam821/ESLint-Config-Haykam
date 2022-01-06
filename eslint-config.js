@@ -99,6 +99,9 @@ module.exports = {
 		],
 		"jsdoc/require-jsdoc": ["error", {
 			enableFixer: false,
+			require: {
+				MethodDefinition: true,
+			},
 		}],
 		"jsdoc/require-param": "error",
 		"jsdoc/require-param-description": "error",
