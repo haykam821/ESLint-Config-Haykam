@@ -88,6 +88,7 @@ module.exports = {
 				SwitchCase: 1,
 			},
 		],
+		"jsdoc/check-alignment": "error",
 		"jsdoc/check-param-names": "error",
 		"jsdoc/check-tag-names": "error",
 		"jsdoc/check-types": [
