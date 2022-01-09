@@ -101,6 +101,7 @@ module.exports = {
 		"jsdoc/require-jsdoc": ["error", {
 			checkConstructors: false,
 			enableFixer: false,
+			publicOnly: true,
 			require: {
 				MethodDefinition: true,
 			},
