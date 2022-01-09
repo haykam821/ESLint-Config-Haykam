@@ -256,6 +256,8 @@ module.exports = {
 			"error",
 			"always",
 		],
+		"semi-spacing": "error",
+		"semi-style": "error",
 		"sort-keys": "error",
 		"space-before-blocks": "error",
 		"space-before-function-paren": [
