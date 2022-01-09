@@ -98,14 +98,6 @@ module.exports = {
 			},
 		],
 		"jsdoc/require-hyphen-before-param-description": ["error", "never"],
-		"jsdoc/require-jsdoc": ["error", {
-			checkConstructors: false,
-			enableFixer: false,
-			publicOnly: true,
-			require: {
-				MethodDefinition: true,
-			},
-		}],
 		"jsdoc/require-param": "error",
 		"jsdoc/require-param-description": "error",
 		"jsdoc/require-param-name": "error",
