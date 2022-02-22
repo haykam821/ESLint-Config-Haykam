@@ -25,6 +25,16 @@ module.exports = {
 				"unicorn/filename-case": "off",
 			},
 		},
+		{
+			files: [
+				"**/*.ts",
+				"**/*.tsx",
+			],
+			rules: {
+				"jsdoc/no-types": "error",
+				"jsdoc/require-param-type": "off",
+			},
+		},
 	],
 	parserOptions: {
 		ecmaVersion: 2021,
