@@ -357,6 +357,7 @@ module.exports = {
 				],
 			},
 		],
+		"unicorn/text-encoding-identifier-case": "error",
 		"unicorn/throw-new-error": "error",
 		"use-isnan": "error",
 		"valid-typeof": "error",
