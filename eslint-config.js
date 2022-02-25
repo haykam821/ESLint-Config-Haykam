@@ -213,6 +213,7 @@ module.exports = {
 		"no-unused-labels": "error",
 		"no-unused-vars": "error",
 		"no-useless-catch": "error",
+		"no-useless-constructor": "error",
 		"no-useless-escape": "error",
 		"no-useless-rename": "error",
 		"no-var": "error",
