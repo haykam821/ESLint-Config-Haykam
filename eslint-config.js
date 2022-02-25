@@ -103,6 +103,7 @@ module.exports = {
 				max: 2,
 			},
 		],
+		"newline-per-chained-call": "error",
 		"no-async-promise-executor": "error",
 		"no-case-declarations": "error",
 		"no-class-assign": "error",
