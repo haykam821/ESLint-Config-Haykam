@@ -7,34 +7,9 @@ module.exports = {
 		node: true,
 	},
 	overrides: [
-		{
-			files: [
-				"*.md",
-			],
-			processor: "markdown/markdown",
-		},
-		{
-			files: [
-				"**/*.md/**",
-			],
-			rules: {
-				"eol-last": "off",
-				"no-multiple-empty-lines": "off",
-				"no-undef": "off",
-				"no-unused-vars": "off",
-				"unicorn/filename-case": "off",
-			},
-		},
-		{
-			files: [
-				"**/*.ts",
-				"**/*.tsx",
-			],
-			rules: {
-				"jsdoc/no-types": "error",
-				"jsdoc/require-param-type": "off",
-			},
-		},
+		require("./rules/markdown.js"),
+		require("./rules/markdown-code.js"),
+		require("./rules/typescript.js"),
 	],
 	parserOptions: {
 		ecmaVersion: 2021,
