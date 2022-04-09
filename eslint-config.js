@@ -187,6 +187,7 @@ module.exports = {
 		"no-unreachable": "error",
 		"no-unsafe-finally": "error",
 		"no-unsafe-negation": "error",
+		"no-unsafe-optional-chaining": "error",
 		"no-unused-labels": "error",
 		"no-unused-vars": "error",
 		"no-useless-catch": "error",
