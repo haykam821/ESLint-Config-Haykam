@@ -36,6 +36,7 @@ module.exports = {
 			"error",
 			"as-needed",
 		],
+		"arrow-spacing": "error",
 		"brace-style": [
 			"error",
 			"1tbs",
