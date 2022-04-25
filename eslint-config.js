@@ -195,6 +195,7 @@ module.exports = {
 		"no-useless-escape": "error",
 		"no-useless-rename": "error",
 		"no-var": "error",
+		"no-warning-comments": "error",
 		"no-with": "error",
 		"node/handle-callback-err": [
 			"error",
