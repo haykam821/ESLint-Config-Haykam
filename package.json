@@ -16,7 +16,7 @@
 		"linter"
 	],
 	"peerDependencies": {
-		"eslint": "^8.7.0"
+		"eslint": "^8.23.0"
 	},
 	"dependencies": {
 		"@rushstack/eslint-patch": "^1.1.0",
