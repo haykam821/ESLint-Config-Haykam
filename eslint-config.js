@@ -2,8 +2,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
 	env: {
-		es2021: true,
-		es6: true,
+		es2022: true,
 		node: true,
 	},
 	overrides: [
@@ -12,7 +11,7 @@ module.exports = {
 		require("./rules/typescript.js"),
 	],
 	parserOptions: {
-		ecmaVersion: 2021,
+		ecmaVersion: 2022,
 	},
 	plugins: [
 		"extra-rules",
