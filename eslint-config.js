@@ -329,6 +329,7 @@ module.exports = {
 		"unicorn/require-array-join-separator": "error",
 		"unicorn/require-number-to-fixed-digits-argument": "error",
 		"unicorn/require-post-message-target-origin": "error",
+		"unicorn/switch-case-braces": "error",
 		"unicorn/template-indent": [
 			"error",
 			{
