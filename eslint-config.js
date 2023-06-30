@@ -124,6 +124,7 @@ module.exports = {
 		"no-empty-character-class": "error",
 		"no-empty-function": "error",
 		"no-empty-pattern": "error",
+		"no-empty-static-block": "error",
 		"no-eval": "error",
 		"no-ex-assign": "error",
 		"no-extend-native": "error",
