@@ -11,7 +11,7 @@ module.exports = {
 		require("./rules/typescript.js"),
 	],
 	parserOptions: {
-		ecmaVersion: 2022,
+		ecmaVersion: 2023,
 	},
 	plugins: [
 		"extra-rules",
