@@ -21,58 +21,127 @@ module.exports = {
 		"json",
 		"html",
 		"markdown",
+		"@stylistic",
 	],
 	rules: {
-		"array-bracket-newline": [
+		"@stylistic/array-bracket-newline": [
 			"error",
 			"consistent",
 		],
-		"array-element-newline": [
+		"@stylistic/array-element-newline": [
 			"error",
 			"consistent",
 		],
-		"arrow-parens": [
+		"@stylistic/arrow-parens": [
 			"error",
 			"as-needed",
 		],
-		"arrow-spacing": "error",
-		"brace-style": [
+		"@stylistic/arrow-spacing": "error",
+		"@stylistic/brace-style": [
 			"error",
 			"1tbs",
 			{
 				allowSingleLine: true,
 			},
 		],
-		camelcase: "error",
-		"capitalized-comments": "error",
-		"comma-dangle": [
+		"@stylistic/comma-dangle": [
 			"error",
 			"always-multiline",
 		],
-		"comma-spacing": "error",
-		"comma-style": "error",
-		"constructor-super": "error",
-		curly: [
-			"error",
-			"multi-line",
-			"consistent",
-		],
-		"dot-location": [
+		"@stylistic/comma-spacing": "error",
+		"@stylistic/comma-style": "error",
+		"@stylistic/dot-location": [
 			"error",
 			"property",
 		],
-		"dot-notation": "error",
-		"eol-last": "error",
-		"extra-rules/no-commented-out-code": "error",
-		"for-direction": "error",
-		"getter-return": "error",
-		indent: [
+		"@stylistic/eol-last": "error",
+		"@stylistic/indent": [
 			"error",
 			"tab",
 			{
 				SwitchCase: 1,
 			},
 		],
+		"@stylistic/key-spacing": "error",
+		"@stylistic/keyword-spacing": "error",
+		"@stylistic/max-statements-per-line": [
+			"error",
+			{
+				max: 2,
+			},
+		],
+		"@stylistic/newline-per-chained-call": "error",
+		"@stylistic/no-extra-semi": "error",
+		"@stylistic/no-floating-decimal": "error",
+		"@stylistic/no-mixed-spaces-and-tabs": "error",
+		"@stylistic/no-multi-spaces": "error",
+		"@stylistic/no-multiple-empty-lines": [
+			"error",
+			{
+				max: 2,
+				maxBOF: 0,
+				maxEOF: 1,
+			},
+		],
+		"@stylistic/no-trailing-spaces": "error",
+		"@stylistic/object-curly-newline": ["error", {
+			ObjectExpression: {
+				minProperties: 1,
+			},
+		}],
+		"@stylistic/object-curly-spacing": [
+			"error",
+			"always",
+		],
+		"@stylistic/object-property-newline": "error",
+		"@stylistic/padded-blocks": [
+			"error",
+			"never",
+		],
+		"@stylistic/quote-props": [
+			"error",
+			"as-needed",
+		],
+		"@stylistic/quotes": [
+			"error",
+			"double",
+		],
+		"@stylistic/semi": [
+			"error",
+			"always",
+		],
+		"@stylistic/semi-spacing": "error",
+		"@stylistic/semi-style": "error",
+		"@stylistic/space-before-blocks": "error",
+		"@stylistic/space-before-function-paren": [
+			"error",
+			{
+				anonymous: "never",
+				asyncArrow: "always",
+				named: "never",
+			},
+		],
+		"@stylistic/space-in-parens": "error",
+		"@stylistic/space-infix-ops": "error",
+		"@stylistic/space-unary-ops": "error",
+		"@stylistic/spaced-comment": "error",
+		"@stylistic/template-curly-spacing": ["error", "never"],
+		"@stylistic/wrap-iife": [
+			"error",
+			"outside",
+		],
+		camelcase: "error",
+		"capitalized-comments": "error",
+		"constructor-super": "error",
+		curly: [
+			"error",
+			"multi-line",
+			"consistent",
+		],
+		"dot-notation": "error",
+		"extra-rules/no-commented-out-code": "error",
+		"for-direction": "error",
+		"getter-return": "error",
 		"jsdoc/check-alignment": "error",
 		"jsdoc/check-param-names": "error",
 		"jsdoc/check-tag-names": "error",
@@ -89,21 +158,12 @@ module.exports = {
 		"jsdoc/require-param-type": "error",
 		"jsdoc/require-returns-check": "error",
 		"jsdoc/valid-types": "error",
-		"key-spacing": "error",
-		"keyword-spacing": "error",
 		"max-nested-callbacks": [
 			"error",
 			{
 				max: 4,
 			},
 		],
-		"max-statements-per-line": [
-			"error",
-			{
-				max: 2,
-			},
-		],
-		"newline-per-chained-call": "error",
 		"no-async-promise-executor": "error",
 		"no-case-declarations": "error",
 		"no-class-assign": "error",
@@ -129,9 +189,7 @@ module.exports = {
 		"no-ex-assign": "error",
 		"no-extend-native": "error",
 		"no-extra-boolean-cast": "error",
-		"no-extra-semi": "error",
 		"no-fallthrough": "error",
-		"no-floating-decimal": "error",
 		"no-func-assign": "error",
 		"no-global-assign": "error",
 		"no-implied-eval": "error",
@@ -142,17 +200,7 @@ module.exports = {
 		"no-irregular-whitespace": "error",
 		"no-lonely-if": "error",
 		"no-misleading-character-class": "error",
-		"no-mixed-spaces-and-tabs": "error",
 		"no-multi-assign": "error",
-		"no-multi-spaces": "error",
-		"no-multiple-empty-lines": [
-			"error",
-			{
-				max: 2,
-				maxBOF: 0,
-				maxEOF: 1,
-			},
-		],
 		"no-nested-ternary": "error",
 		"no-new": "error",
 		"no-new-func": "error",
@@ -180,7 +228,6 @@ module.exports = {
 		"no-shadow-restricted-names": "error",
 		"no-sparse-arrays": "error",
 		"no-this-before-super": "error",
-		"no-trailing-spaces": "error",
 		"no-undef": "error",
 		"no-unexpected-multiline": "error",
 		"no-unneeded-ternary": "error",
@@ -209,57 +256,15 @@ module.exports = {
 				name: "fs",
 			}],
 		],
-		"object-curly-newline": ["error", {
-			ObjectExpression: {
-				minProperties: 1,
-			},
-		}],
-		"object-curly-spacing": [
-			"error",
-			"always",
-		],
-		"object-property-newline": "error",
 		"one-var": ["error", "never"],
-		"padded-blocks": [
-			"error",
-			"never",
-		],
 		"prefer-const": "error",
 		"prefer-exponentiation-operator": "error",
 		"prefer-object-spread": "error",
 		"prefer-rest-params": "error",
-		"quote-props": [
-			"error",
-			"as-needed",
-		],
-		quotes: [
-			"error",
-			"double",
-		],
 		"require-await": "error",
 		"require-yield": "error",
-		semi: [
-			"error",
-			"always",
-		],
-		"semi-spacing": "error",
-		"semi-style": "error",
 		"sort-keys": "error",
-		"space-before-blocks": "error",
-		"space-before-function-paren": [
-			"error",
-			{
-				anonymous: "never",
-				asyncArrow: "always",
-				named: "never",
-			},
-		],
-		"space-in-parens": "error",
-		"space-infix-ops": "error",
-		"space-unary-ops": "error",
-		"spaced-comment": "error",
 		"symbol-description": "error",
-		"template-curly-spacing": ["error", "never"],
 		"unicorn/better-regex": "error",
 		"unicorn/catch-error-name": [
 			"error",
@@ -357,10 +362,6 @@ module.exports = {
 		"unicorn/throw-new-error": "error",
 		"use-isnan": "error",
 		"valid-typeof": "error",
-		"wrap-iife": [
-			"error",
-			"outside",
-		],
 		yoda: "error",
 	},
 	settings: {

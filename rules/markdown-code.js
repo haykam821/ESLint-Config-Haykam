@@ -3,8 +3,8 @@ module.exports = {
 		"**/*.md/**",
 	],
 	rules: {
-		"eol-last": "off",
-		"no-multiple-empty-lines": "off",
+		"@stylistic/eol-last": "off",
+		"@stylistic/no-multiple-empty-lines": "off",
 		"no-undef": "off",
 		"no-unused-vars": "off",
 		"unicorn/filename-case": "off",
