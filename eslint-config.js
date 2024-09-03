@@ -62,6 +62,10 @@ module.exports = {
 				SwitchCase: 1,
 			},
 		],
+		"@stylistic/indent-binary-ops": [
+			"error",
+			"tab",
+		],
 		"@stylistic/key-spacing": "error",
 		"@stylistic/keyword-spacing": "error",
 		"@stylistic/max-statements-per-line": [
