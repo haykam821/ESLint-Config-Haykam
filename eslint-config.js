@@ -28,6 +28,10 @@ module.exports = {
 			"error",
 			"consistent",
 		],
+		"@stylistic/array-bracket-spacing": [
+			"error",
+			"never",
+		],
 		"@stylistic/array-element-newline": [
 			"error",
 			"consistent",
