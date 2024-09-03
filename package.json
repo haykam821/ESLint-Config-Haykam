@@ -27,7 +27,7 @@
 		"eslint-plugin-json": "^3.1.0",
 		"eslint-plugin-markdown": "^3.0.0",
 		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-unicorn": "^49.0.0"
+		"eslint-plugin-unicorn": "^55.0.0"
 	},
 	"author": "haykam821",
 	"license": "MIT",
