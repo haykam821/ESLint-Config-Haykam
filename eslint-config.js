@@ -82,9 +82,9 @@ module.exports = {
 		"@stylistic/no-multiple-empty-lines": [
 			"error",
 			{
-				max: 2,
+				max: 1,
 				maxBOF: 0,
-				maxEOF: 1,
+				maxEOF: 0,
 			},
 		],
 		"@stylistic/no-trailing-spaces": "error",
