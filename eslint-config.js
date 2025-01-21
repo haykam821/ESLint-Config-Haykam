@@ -135,6 +135,7 @@ module.exports = {
 		"@stylistic/space-unary-ops": "error",
 		"@stylistic/spaced-comment": "error",
 		"@stylistic/template-curly-spacing": ["error", "never"],
+		"@stylistic/type-annotation-spacing": "error",
 		"@stylistic/wrap-iife": [
 			"error",
 			"outside",
