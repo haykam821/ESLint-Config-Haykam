@@ -283,6 +283,7 @@ module.exports = {
 				name: "error",
 			},
 		],
+		"unicorn/consistent-existence-index-check": "error",
 		"unicorn/error-message": "error",
 		"unicorn/escape-case": "error",
 		"unicorn/explicit-length-check": "error",
