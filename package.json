@@ -23,7 +23,7 @@
 		"@stylistic/eslint-plugin": "^3.0.0",
 		"eslint-plugin-extra-rules": "0.0.0-development",
 		"eslint-plugin-html": "^7.1.0",
-		"eslint-plugin-jsdoc": "^50.6.2",
+		"eslint-plugin-jsdoc": "^50.6.3",
 		"eslint-plugin-json": "^3.1.0",
 		"eslint-plugin-markdown": "^3.0.0",
 		"eslint-plugin-node": "^11.1.0",
