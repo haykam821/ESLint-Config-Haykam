@@ -267,6 +267,9 @@ module.exports = {
 			}],
 		],
 		"one-var": ["error", "never"],
+		"perfectionist/sort-interfaces": ["error", {
+			ignoreCase: false,
+		}],
 		"perfectionist/sort-objects": ["error", {
 			ignoreCase: false,
 		}],
