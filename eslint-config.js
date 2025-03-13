@@ -21,7 +21,7 @@ module.exports = {
 		"json",
 		"html",
 		"markdown",
-		"sort-destructure-keys",
+		"perfectionist",
 		"@stylistic",
 	],
 	rules: {
@@ -267,14 +267,15 @@ module.exports = {
 			}],
 		],
 		"one-var": ["error", "never"],
+		"perfectionist/sort-objects": ["error", {
+			ignoreCase: false,
+		}],
 		"prefer-const": "error",
 		"prefer-exponentiation-operator": "error",
 		"prefer-object-spread": "error",
 		"prefer-rest-params": "error",
 		"require-await": "error",
 		"require-yield": "error",
-		"sort-destructure-keys/sort-destructure-keys": "error",
-		"sort-keys": "error",
 		"symbol-description": "error",
 		"unicorn/better-regex": "error",
 		"unicorn/catch-error-name": [
