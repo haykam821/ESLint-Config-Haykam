@@ -270,6 +270,22 @@ module.exports = {
 		"perfectionist/sort-interfaces": ["error", {
 			ignoreCase: false,
 		}],
+		"perfectionist/sort-jsx-props": ["error", {
+			customGroups: {
+				className: "className",
+				id: "id",
+				key: "key",
+				ref: "ref",
+			},
+			groups: [
+				"key",
+				"ref",
+				"id",
+				"className",
+				"unknown",
+			],
+			ignoreCase: false,
+		}],
 		"perfectionist/sort-objects": ["error", {
 			ignoreCase: false,
 		}],
