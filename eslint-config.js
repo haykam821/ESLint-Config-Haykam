@@ -271,12 +271,19 @@ module.exports = {
 			ignoreCase: false,
 		}],
 		"perfectionist/sort-jsx-props": ["error", {
-			customGroups: {
-				className: "className",
-				id: "id",
-				key: "key",
-				ref: "ref",
-			},
+			customGroups: [{
+				elementNamePattern: "className",
+				groupName: "className",
+			}, {
+				elementNamePattern: "id",
+				groupName: "id",
+			}, {
+				elementNamePattern: "key",
+				groupName: "key",
+			}, {
+				elementNamePattern: "ref",
+				groupName: "ref",
+			}],
 			groups: [
 				"key",
 				"ref",
