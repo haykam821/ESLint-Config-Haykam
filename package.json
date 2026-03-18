@@ -2,7 +2,7 @@
 	"name": "eslint-config-haykam",
 	"version": "1.25.0",
 	"description": "My personal configuration for ESLint.",
-	"main": "./eslint-config.js",
+	"main": "./src/eslint-config.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint \"./**/*.js\""
@@ -41,10 +41,10 @@
 	},
 	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme",
 	"files": [
-		"eslint-config.js",
-		"rules/*.js"
+		"src/eslint-config.js",
+		"src/rules/*.js"
 	],
 	"eslintConfig": {
-		"extends": "./eslint-config.js"
+		"extends": "./src/eslint-config.js"
 	}
 }
