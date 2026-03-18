@@ -1,3 +1,5 @@
+import { Linter } from "eslint";
+
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
@@ -416,4 +418,4 @@ module.exports = {
 			},
 		},
 	},
-};
+} satisfies Linter.Config;

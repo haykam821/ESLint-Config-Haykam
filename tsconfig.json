@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"declarationMap": true,
+		"downlevelIteration": true,
+		"lib": [
+			"es2022"
+		],
+		"module": "preserve",
+		"noImplicitAny": true,
+		"outDir": "./dist",
+		"rewriteRelativeImportExtensions": true,
+		"strict": true,
+		"target": "es2022"
+	},
+	"include": [
+		"./src"
+	]
+}

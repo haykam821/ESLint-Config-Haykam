@@ -1,3 +1,5 @@
+import { Linter } from "eslint";
+
 module.exports = {
 	files: [
 		"**/*.ts",
@@ -7,4 +9,4 @@ module.exports = {
 		"jsdoc/no-types": "error",
 		"jsdoc/require-param-type": "off",
 	},
-};
+} satisfies Linter.ConfigOverride;

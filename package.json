@@ -2,10 +2,10 @@
 	"name": "eslint-config-haykam",
 	"version": "1.25.0",
 	"description": "My personal configuration for ESLint.",
-	"main": "./src/eslint-config.js",
+	"main": "./dist/eslint-config.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint \"./**/*.js\""
+		"lint": "eslint \"./**/*.ts\" --ignore-path .gitignore",
+		"prepack": "rimraf dist && tsc"
 	},
 	"keywords": [
 		"eslint",
@@ -30,6 +30,14 @@
 		"eslint-plugin-perfectionist": "^5.7.0",
 		"eslint-plugin-unicorn": "^56.0.1"
 	},
+	"devDependencies": {
+		"@types/eslint": "^8.56.12",
+		"@types/node": "^25.5.0",
+		"@typescript-eslint/eslint-plugin": "^8.57.1",
+		"@typescript-eslint/parser": "^8.57.1",
+		"rimraf": "^6.1.3",
+		"typescript": "^5.9.3"
+	},
 	"author": "haykam821",
 	"license": "MIT",
 	"repository": {
@@ -41,10 +49,20 @@
 	},
 	"homepage": "https://github.com/haykam821/ESLint-Config-Haykam#readme",
 	"files": [
-		"src/eslint-config.js",
-		"src/rules/*.js"
+		"dist/**/*"
 	],
 	"eslintConfig": {
-		"extends": "./src/eslint-config.js"
+		"extends": [
+			"./dist/eslint-config.js",
+			"plugin:@typescript-eslint/eslint-recommended",
+			"plugin:@typescript-eslint/recommended"
+		],
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"rules": {
+			"@typescript-eslint/no-require-imports": "off"
+		}
 	}
 }

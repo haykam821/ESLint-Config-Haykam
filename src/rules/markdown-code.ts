@@ -1,3 +1,5 @@
+import { Linter } from "eslint";
+
 module.exports = {
 	files: [
 		"**/*.md/**",
@@ -9,4 +11,4 @@ module.exports = {
 		"no-unused-vars": "off",
 		"unicorn/filename-case": "off",
 	},
-};
+} satisfies Linter.ConfigOverride;
