@@ -1,6 +1,6 @@
 import { Linter } from "eslint";
 
-module.exports = {
+export const typeScriptOverride = {
 	files: [
 		"**/*.ts",
 		"**/*.tsx",

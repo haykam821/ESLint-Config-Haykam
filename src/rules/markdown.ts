@@ -1,8 +1,8 @@
 import { Linter } from "eslint";
 
-module.exports = {
+export const markdownOverride = {
 	files: [
-		"*.md",
+		"**/*.md",
 	],
 	processor: "markdown/markdown",
 } satisfies Linter.ConfigOverride;

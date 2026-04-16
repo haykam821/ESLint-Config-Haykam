@@ -12,16 +12,14 @@ This configuration for ESLint is based off the style that I program in. It is us
 
 Use `npm` to install this shareable config and ESLint itself:
 
-    npm install --save-dev eslint-config-haykam eslint
+    npm install --save-dev eslint-config-haykam eslint@8
 
 ## Usage
 
-Add this to your `.eslintrc.json` file:
+Add this to your `eslint.config.js` file:
 
-```json
-{
-  "extends": "eslint-config-haykam"
-}
+```js
+export { default } from "eslint-config-haykam";
 ```
 
 ## Projects Used In

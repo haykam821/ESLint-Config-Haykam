@@ -5,7 +5,7 @@
 		"lib": [
 			"es2022"
 		],
-		"module": "preserve",
+		"module": "node20",
 		"noImplicitAny": true,
 		"outDir": "./dist",
 		"rewriteRelativeImportExtensions": true,

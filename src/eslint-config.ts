@@ -1,31 +1,35 @@
+import { FlatCompat } from "@eslint/eslintrc";
 import { Linter } from "eslint";
+import eslintPluginJsdoc from "eslint-plugin-jsdoc";
+import eslintPluginUnicorn from "eslint-plugin-unicorn";
+import { fileURLToPath } from "node:url";
+import globals from "globals";
+import { markdownCodeOverride } from "./rules/markdown-code.ts";
+import { markdownOverride } from "./rules/markdown.ts";
+import path from "node:path";
+import { typeScriptOverride } from "./rules/typescript.ts";
 
-require("@rushstack/eslint-patch/modern-module-resolution");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = {
-	env: {
-		es2022: true,
-		node: true,
+const compat = new FlatCompat({
+	baseDirectory: __dirname,
+});
+
+const base: Linter.FlatConfig = {
+	languageOptions: {
+		globals: {
+			...globals.es2022,
+			...globals.node,
+		},
+		parserOptions: {
+			ecmaVersion: 2023,
+		},
 	},
-	overrides: [
-		require("./rules/markdown.js"),
-		require("./rules/markdown-code.js"),
-		require("./rules/typescript.js"),
-	],
-	parserOptions: {
-		ecmaVersion: 2023,
+	plugins: {
+		jsdoc: eslintPluginJsdoc,
+		unicorn: eslintPluginUnicorn,
 	},
-	plugins: [
-		"extra-rules",
-		"unicorn",
-		"jsdoc",
-		"node",
-		"json",
-		"html",
-		"markdown",
-		"perfectionist",
-		"@stylistic",
-	],
 	rules: {
 		"@stylistic/array-bracket-newline": [
 			"error",
@@ -418,4 +422,12 @@ module.exports = {
 			},
 		},
 	},
-} satisfies Linter.Config;
+};
+
+export default [
+	...compat.plugins("@stylistic", "extra-rules", "html", "json", "markdown", "node", "perfectionist"),
+	base,
+	markdownOverride,
+	markdownCodeOverride,
+	typeScriptOverride,
+];

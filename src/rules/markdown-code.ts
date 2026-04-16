@@ -1,6 +1,6 @@
 import { Linter } from "eslint";
 
-module.exports = {
+export const markdownCodeOverride = {
 	files: [
 		"**/*.md/**",
 	],
