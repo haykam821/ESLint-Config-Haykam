@@ -5,7 +5,7 @@
 	"main": "./dist/eslint-config.js",
 	"type": "module",
 	"scripts": {
-		"lint": "eslint .",
+		"lint": "eslint",
 		"prepack": "rimraf dist && tsc"
 	},
 	"keywords": [
@@ -17,7 +17,7 @@
 		"linter"
 	],
 	"peerDependencies": {
-		"eslint": "^8.55.0"
+		"eslint": "^9.39.4"
 	},
 	"dependencies": {
 		"@eslint/eslintrc": "^3.3.5",
@@ -33,9 +33,7 @@
 		"globals": "^17.5.0"
 	},
 	"devDependencies": {
-		"@eslint/compat": "^1.4.1",
-		"@types/eslint": "^8.56.12",
-		"@types/eslint__eslintrc": "^2.1.2",
+		"@eslint/compat": "^2.0.5",
 		"@types/node": "^25.5.0",
 		"@typescript-eslint/eslint-plugin": "^8.58.2",
 		"@typescript-eslint/parser": "^8.58.2",

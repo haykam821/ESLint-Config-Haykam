@@ -1,6 +1,6 @@
-import { Linter } from "eslint";
+import { defineConfig } from "eslint/config";
 
-export const markdownCodeOverride = {
+export const markdownCodeOverride = defineConfig({
 	files: [
 		"**/*.md/**",
 	],
@@ -11,4 +11,4 @@ export const markdownCodeOverride = {
 		"no-unused-vars": "off",
 		"unicorn/filename-case": "off",
 	},
-} satisfies Linter.ConfigOverride;
+});

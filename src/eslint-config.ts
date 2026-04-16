@@ -1,22 +1,14 @@
-import { FlatCompat } from "@eslint/eslintrc";
-import { Linter } from "eslint";
+import { compat } from "./utils/compat.ts";
+import { defineConfig } from "eslint/config";
 import eslintPluginJsdoc from "eslint-plugin-jsdoc";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
-import { fileURLToPath } from "node:url";
+import { fixupConfigRules } from "@eslint/compat";
 import globals from "globals";
 import { markdownCodeOverride } from "./rules/markdown-code.ts";
 import { markdownOverride } from "./rules/markdown.ts";
-import path from "node:path";
 import { typeScriptOverride } from "./rules/typescript.ts";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-	baseDirectory: __dirname,
-});
-
-const base: Linter.FlatConfig = {
+const base = defineConfig({
 	languageOptions: {
 		globals: {
 			...globals.es2022,
@@ -422,12 +414,13 @@ const base: Linter.FlatConfig = {
 			},
 		},
 	},
-};
+});
 
-export default [
-	...compat.plugins("@stylistic", "extra-rules", "html", "json", "markdown", "node", "perfectionist"),
-	base,
-	markdownOverride,
-	markdownCodeOverride,
-	typeScriptOverride,
-];
+export default defineConfig([
+	...compat.plugins("@stylistic", "html", "json", "markdown", "perfectionist"),
+	...fixupConfigRules(defineConfig(compat.plugins("extra-rules", "node"))),
+	...base,
+	...markdownOverride,
+	...markdownCodeOverride,
+	...typeScriptOverride,
+]);

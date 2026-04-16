@@ -1,6 +1,6 @@
-import { Linter } from "eslint";
+import { defineConfig } from "eslint/config";
 
-export const typeScriptOverride = {
+export const typeScriptOverride = defineConfig({
 	files: [
 		"**/*.ts",
 		"**/*.tsx",
@@ -9,4 +9,4 @@ export const typeScriptOverride = {
 		"jsdoc/no-types": "error",
 		"jsdoc/require-param-type": "off",
 	},
-} satisfies Linter.ConfigOverride;
+});
