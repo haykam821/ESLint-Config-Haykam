@@ -19,6 +19,9 @@ const base = defineConfig({
 			ecmaVersion: 2023,
 		},
 	},
+	linterOptions: {
+		reportUnusedDisableDirectives: "error",
+	},
 	plugins: {
 		"@stylistic": eslintPluginStylistic,
 		jsdoc: eslintPluginJsdoc,
