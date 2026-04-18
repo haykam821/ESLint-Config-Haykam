@@ -91,6 +91,7 @@ const base = defineConfig({
 			},
 		],
 		"@stylistic/no-trailing-spaces": "error",
+		"@stylistic/no-whitespace-before-property": "error",
 		"@stylistic/object-curly-newline": ["error", {
 			ObjectExpression: {
 				minProperties: 1,
