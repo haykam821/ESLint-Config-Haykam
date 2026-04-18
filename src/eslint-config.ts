@@ -304,6 +304,9 @@ const base = defineConfig({
 			],
 			ignoreCase: false,
 		}],
+		"perfectionist/sort-named-imports": ["error", {
+			ignoreCase: false,
+		}],
 		"perfectionist/sort-objects": ["error", {
 			ignoreCase: false,
 		}],
