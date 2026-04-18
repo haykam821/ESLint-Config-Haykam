@@ -424,7 +424,7 @@ export default defineConfig([
 	...compat.plugins("html", "json", "markdown", "perfectionist"),
 	...fixupConfigRules(defineConfig(compat.plugins("extra-rules", "node"))),
 	...base,
+	...typeScriptOverride,
 	...markdownOverride,
 	...markdownCodeOverride,
-	...typeScriptOverride,
 ]);
