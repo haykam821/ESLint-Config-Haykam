@@ -113,6 +113,7 @@ const base = defineConfig({
 			"error",
 			"double",
 		],
+		"@stylistic/rest-spread-spacing": "error",
 		"@stylistic/semi": [
 			"error",
 			"always",
