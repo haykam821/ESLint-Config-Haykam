@@ -1,6 +1,7 @@
-import config from "./src/eslint-config.ts";
-import { fileURLToPath } from "node:url";
 import { includeIgnoreFile } from "@eslint/compat";
+import { fileURLToPath } from "node:url";
+
+import config from "./src/eslint-config.ts";
 
 const gitignorePath = fileURLToPath(new URL(".gitignore", import.meta.url));
 

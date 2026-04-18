@@ -1,14 +1,15 @@
-import { compat } from "./utils/compat.ts";
-import { defineConfig } from "eslint/config";
+import { fixupConfigRules } from "@eslint/compat";
+import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import eslintPluginJsdoc from "eslint-plugin-jsdoc";
 import eslintPluginMarkdown from "eslint-plugin-markdown";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
-import eslintPluginStylistic from "@stylistic/eslint-plugin";
-import { fixupConfigRules } from "@eslint/compat";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
+
 import { markdownCodeOverride } from "./rules/markdown-code.ts";
 import { markdownOverride } from "./rules/markdown.ts";
 import { typeScriptOverride } from "./rules/typescript.ts";
+import { compat } from "./utils/compat.ts";
 
 const base = defineConfig({
 	languageOptions: {
@@ -274,6 +275,9 @@ const base = defineConfig({
 			}],
 		],
 		"one-var": ["error", "never"],
+		"perfectionist/sort-imports": ["error", {
+			ignoreCase: false,
+		}],
 		"perfectionist/sort-interfaces": ["error", {
 			ignoreCase: false,
 		}],
