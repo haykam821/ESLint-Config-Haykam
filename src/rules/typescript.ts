@@ -16,6 +16,7 @@ export const typeScriptOverride = defineConfig({
 		"@typescript-eslint": plugin,
 	},
 	rules: {
+		"@typescript-eslint/array-type": "error",
 		"@typescript-eslint/ban-ts-comment": "error",
 		"@typescript-eslint/no-duplicate-enum-values": "error",
 		"@typescript-eslint/no-empty-object-type": "error",
