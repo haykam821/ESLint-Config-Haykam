@@ -1,6 +1,7 @@
 import { compat } from "./utils/compat.ts";
 import { defineConfig } from "eslint/config";
 import eslintPluginJsdoc from "eslint-plugin-jsdoc";
+import eslintPluginMarkdown from "eslint-plugin-markdown";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import eslintPluginStylistic from "@stylistic/eslint-plugin";
 import { fixupConfigRules } from "@eslint/compat";
@@ -25,6 +26,7 @@ const base = defineConfig({
 	plugins: {
 		"@stylistic": eslintPluginStylistic,
 		jsdoc: eslintPluginJsdoc,
+		markdown: eslintPluginMarkdown,
 		unicorn: eslintPluginUnicorn,
 	},
 	rules: {
@@ -423,7 +425,7 @@ const base = defineConfig({
 });
 
 export default defineConfig([
-	...compat.plugins("html", "json", "markdown", "perfectionist"),
+	...compat.plugins("html", "json", "perfectionist"),
 	...fixupConfigRules(defineConfig(compat.plugins("extra-rules", "node"))),
 	...base,
 	...typeScriptOverride,
