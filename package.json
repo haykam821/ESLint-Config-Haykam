@@ -5,8 +5,9 @@
 	"main": "./dist/eslint-config.js",
 	"type": "module",
 	"scripts": {
+		"build": "rimraf dist && tsc",
 		"lint": "eslint",
-		"prepack": "rimraf dist && tsc"
+		"prepack": "npm run build"
 	},
 	"keywords": [
 		"eslint",
