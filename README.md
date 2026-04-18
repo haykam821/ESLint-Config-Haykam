@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/haykam821/ESLint-Config-Haykam.svg?style=popout&label=github)](https://github.com/haykam821/ESLint-Config-Haykam/releases/latest)
 [![npm](https://img.shields.io/npm/v/eslint-config-haykam.svg?style=popout&colorB=red)](https://www.npmjs.com/package/eslint-config-haykam)
-[![Travis (.com)](https://img.shields.io/travis/com/haykam821/ESLint-Config-Haykam.svg?style=popout)](https://travis-ci.com/haykam821/ESLint-Config-Haykam)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/haykam821/ESLint-Config-Haykam/lint.yml?branch=master)](https://github.com/haykam821/ESLint-Config-Haykam/actions/workflows/lint.yml)
 
 My personal configuration for ESLint.
 
